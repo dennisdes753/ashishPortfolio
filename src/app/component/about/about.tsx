@@ -1,13 +1,12 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, MouseEventHandler } from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import './about.scss'
 
 export default function About(){
     const [translateX, setTranslateX] = useState(0);
     const [translateY, setTranslateY] = useState(0);
-
-    function handleMouseEnter(event: MouseEvent) {
+    const handleMouseEnter: MouseEventHandler<HTMLButtonElement> = (event) => {
         const startX = event.clientX;
         const startY = event.clientY;
 
@@ -43,7 +42,7 @@ export default function About(){
 
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseleave', handleMouseLeave);
-    }
+    };
     return(
         <>
             <div className="about_sec">
@@ -65,12 +64,12 @@ export default function About(){
                             </div>
                             <div className="about_button">
                                 <button
-                                className="btn btn-primary"
-                                id="hoverButton"
-                                style={{ transform: `translate(${translateX}px, ${translateY}px)` }}
-                                onMouseEnter={handleMouseEnter}
+                                    className="btn btn-primary"
+                                    id="hoverButton"
+                                    style={{ transform: `translate(${translateX}px, ${translateY}px)` }}
+                                    onMouseEnter={handleMouseEnter}
                                 >
-                                        About Me
+                                    About Me
                                 </button>
                             </div>
                         </Col>

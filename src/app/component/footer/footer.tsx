@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react'
+import React, { useState, MouseEventHandler } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 import {Container, Row, Col} from 'react-bootstrap'
@@ -9,8 +9,7 @@ import './footer.scss'
 export default function Footer() {
     const [translateX, setTranslateX] = useState(0);
     const [translateY, setTranslateY] = useState(0);
-
-    function handleMouseEnter(event: MouseEvent) {
+    const handleMouseEnter: MouseEventHandler<HTMLButtonElement> = (event) => {
         const startX = event.clientX;
         const startY = event.clientY;
 
@@ -46,7 +45,7 @@ export default function Footer() {
 
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseleave', handleMouseLeave);
-    }
+    };
   return (
     <>
         <footer>
@@ -61,13 +60,14 @@ export default function Footer() {
                         </div>
                         <div className="get_in_touch">
                             <div className="hr"/>
-                            <button
-                                className="btn btn-primary"
-                                id="hoverButton"
-                                style={{ transform: `translate(${translateX}px, ${translateY}px)` }}
+                              <button
+                                  className="btn btn-primary"
+                                  id="hoverButton"
+                                  style={{ transform: `translate(${translateX}px, ${translateY}px)` }}
                                   onMouseEnter={handleMouseEnter}
-                            >
-                                Get In Touch</button>
+                              >
+                                  Get in Touch
+                              </button>
                         </div>
                         <div className="mailid_phone">
                             <Link href="mailto:jainashish753@gmail.com" target="_blank" className="btn btn-primary">jainashish753@gmail.com</Link>
