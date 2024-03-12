@@ -7,11 +7,11 @@ export default function About(){
     const [translateX, setTranslateX] = useState(0);
     const [translateY, setTranslateY] = useState(0);
 
-    function handleMouseEnter(event) {
+    function handleMouseEnter(event: MouseEvent) {
         const startX = event.clientX;
         const startY = event.clientY;
 
-        function handleMouseMove(event) {
+        function handleMouseMove(event: MouseEvent) {
             const currentX = event.clientX;
             const currentY = event.clientY;
 
