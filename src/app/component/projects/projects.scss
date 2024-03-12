@@ -1,0 +1,35 @@
+.project_sec{
+    width: 100%;
+    margin: 50px 0;
+    overflow: hidden;
+    ul{
+        width: 1920px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        white-space: nowrap;
+        li{
+            display: inline-block;
+            animation: scroll 25s linear infinite;
+            transition: all 0.10s ease-in-out;
+            a{
+                width: 100%;
+                max-width: 528px;
+                height: 396px;
+                display: inline-block;
+                margin-right: 20px;
+            }
+            @keyframes scroll {
+                0% {
+                    transform: translateX(100%);
+                    transition: all 0.10s ease-in-out;
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                    transition: all 0.10s ease-in-out;
+                }
+            }
+        }
+    }
+}

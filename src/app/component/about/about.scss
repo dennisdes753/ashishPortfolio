@@ -1,0 +1,43 @@
+.about_sec{
+    width: 100%;
+    margin: 100px 0;
+    .about_left{
+        width: 100%;
+        h4{
+            font-size: 32px;
+            line-height: 62px;
+        }
+    }
+    .about_right {
+        width: 100%;
+        padding-right: 10rem;
+        padding-left: 10rem;
+        p {
+            font-size: 25px;
+            line-height: 42px;
+        }
+    }
+    .about_button{
+        width: 100%;
+        padding-left: 150px;
+        margin-top: 50px;
+        button{
+            width: 100%;
+            max-width: 192px;
+            min-height: 192px;
+            background: #000;
+            border-radius: 50%;
+            font-size: 24px;
+            border: transparent;
+        }
+    }
+}
+
+#hoverButton {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.hovered {
+    transform: translate(500px, 500px);
+}

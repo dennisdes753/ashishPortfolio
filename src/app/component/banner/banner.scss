@@ -1,0 +1,190 @@
+.bannerSection {
+    width: 100%;
+    min-height: calc(100vh - 68px);
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+    }
+
+    .location_india {
+        width: 100%;
+        max-width: 448px;
+        max-height: 117px;
+        background: #000;
+        border-radius: 0 100px 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        position: absolute;
+        top: 35%;
+        left: -58px;
+        padding: 20px;
+
+        p {
+            color: #fff;
+            font-size: 25px;
+            margin-bottom: 0;
+            padding-left: 87px;
+            line-height: 30px;
+        }
+
+        span {
+            width: 80px;
+            height: 80px;
+            background: #999D9E;
+            padding: 20px;
+            border-radius: 50%;
+            .globe {
+                width: 40px;
+                height: 40px;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                overflow: hidden;
+                will-change: transform;
+                position: relative;
+                left: 20px;
+                top: 17px;
+                &:nth-child(1) {
+                    animation-delay: -1.8s;
+                }
+                &:nth-child(2) {
+                    animation-delay: -.9s;
+                }
+                @keyframes globe {
+                    0% {
+                        transform: translate(-50%, -50%) rotate(15deg);
+                    }
+
+                    50% {
+                        transform: translate(-50%, -50%) rotate(-15deg);
+                    }
+
+                    100% {
+                        transform: translate(-50%, -50%) rotate(15deg);
+                    }
+                }
+                .globe-wrap {
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: block;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%) rotate(30deg);
+                    animation: globe 5.4s cubic-bezier(0.35, 0, 0.65, 1) infinite;
+                    overflow: hidden;
+                    box-shadow: inset 0px 0px 0px .125em #fff;
+                }
+                .circle {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    box-shadow: inset .1em 0px 0px .08em #fff;
+                    animation: circle1 2.7s linear infinite;
+                    font-size: .75em;
+                }
+                @keyframes circle1 {
+                    0% {
+                        border-radius: 50%;
+                        box-shadow: inset .1em 0px 0px .08em #fff;
+                        width: 100%;
+                    }
+                    49% {
+                        border-radius: 50%;
+                        box-shadow: inset .1em 0px 0px .08em #fff;
+                        background: transparent;
+                    }
+                    50% {
+                        border-radius: 0%;
+                        width: .175em;
+                        background: #fff;
+                    }
+                    51% {
+                        border-radius: 50%;
+                        box-shadow: inset -.1em 0px 0px .08em #fff;
+                        background: transparent;
+                    }
+                    100% {
+                        border-radius: 50%;
+                        box-shadow: inset -.1em 0px 0px .08em #fff;
+                        width: 100%;
+                    }
+                }
+                .circle-hor {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 150%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    height: 55%;
+                    box-shadow: inset 0px 0px 0px .15em #fff;
+                    font-size: .75em;
+                }
+                .circle-hor-middle {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 150%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 0%;
+                    height: .15em;
+                    background: #fff;
+                    font-size: .75em;
+                }
+            }
+        }
+    }
+    .freelance_content{
+        position: absolute;
+        left: 64%;
+        top: 15%;
+        svg{
+            width: 75px;
+            position: relative;
+            left: -20px;
+            top: 20px;
+        }
+        p{
+            color: #fff;
+            font-size: 32px;
+        }
+    }
+    .ashish_marque {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        gap: 20px;
+        white-space: nowrap;
+        animation: marquee-animation 100s linear infinite;
+        p{
+            color: #fff;
+            font-size: 200px;
+        }
+        @keyframes marquee-animation {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
