@@ -20,6 +20,7 @@ export default function Header() {
                             <Link href="#home">Work</Link>
                             <Link href="#link">About</Link>
                             <Link href="#link">Contact</Link>
+                            <Link className="resume_button btn btn-primary" href="https://drive.google.com/file/d/11grhO4I5u54srNJ8BVoxrG2Rh2Kkg0X0/view?usp=sharing" target="_blank">Resume</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -5,12 +5,21 @@ import { FMLProject, FractionProject, HealthCareProject, MetaGameProject, Rudrak
 import './projects.scss'
 
 export default function Projects(){
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true
+    };
     return(
         <>
             <div className="project_sec">
                 <ul>
                     <li>
-                        <Link href="https://fml.app/" target="_blank">
+                        <Link href="https://www.fml.club/" target="_blank">
                             <Image className="img-fluid" src={FMLProject} alt="image-project"/>
                         </Link>
                     </li>

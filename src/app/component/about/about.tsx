@@ -50,9 +50,7 @@ export default function About(){
                     <Row>
                         <Col xxl="6"  lg="12" xs="12">
                             <div className="about_left">
-                                <h4>Helping brands to stand out in the digital era.
-                                    Together we will set the new status quo. No
-                                    nonsense, always on the cutting edge.</h4>
+                                <h4>As a skilled frontend developer, I specialize in crafting user-friendly and visually appealing web experiences. Proficient in modern frontend technologies such as HTML, CSS, and JavaScript frameworks like React and Next.js, I excel at translating design concepts into responsive and interactive interfaces. With a strong focus on user experience and accessibility, I am dedicated to delivering high-quality solutions that meet both client requirements and industry standards.</h4>
                             </div>
                         </Col>
                         <Col xxl="6" lg="12" xs="12">
@@ -61,6 +59,15 @@ export default function About(){
                                     for design, code & interaction
                                     position me in a unique place in
                                     the web design world.</p>
+                                <p className="font-bold">My SKills are:</p>
+                                <button className="btn btn-primary">HTML</button>
+                                <button className="btn btn-primary">CSS</button>
+                                <button className="btn btn-primary">Sass</button>
+                                <button className="btn btn-primary">React</button>
+                                <button className="btn btn-primary">Next</button>
+                                <button className="btn btn-primary">Git</button>
+                                <button className="btn btn-primary">Tailwind</button> 
+                                <button className="btn btn-primary">Javascript</button>                           
                             </div>
                             <div className="about_button">
                                 <button

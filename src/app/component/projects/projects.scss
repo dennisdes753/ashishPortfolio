@@ -10,7 +10,7 @@
         white-space: nowrap;
         li{
             display: inline-block;
-            animation: scroll 25s linear infinite;
+            animation: marquee 10s linear infinite;
             transition: all 0.10s ease-in-out;
             a{
                 width: 100%;
@@ -19,15 +19,13 @@
                 display: inline-block;
                 margin-right: 20px;
             }
-            @keyframes scroll {
-                0% {
-                    transform: translateX(100%);
-                    transition: all 0.10s ease-in-out;
+            @keyframes marquee {
+                from {
+                    transform: translateX(0);
                 }
-
-                100% {
-                    transform: translateX(-100%);
-                    transition: all 0.10s ease-in-out;
+            
+                to {
+                    transform: translateX(calc(-100% - 600px));
                 }
             }
         }

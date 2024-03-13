@@ -14,7 +14,7 @@ export default function Recent(){
                         <Col xxl="12" md="12" xs="12">
                             <div className="recent_projects">
                                 <h6>Recent Work</h6>
-                                <Link href="https://fml.app/" target="_blank" className="recent_fml">
+                                <Link href="https://www.fml.club/" target="_blank" className="recent_fml">
                                     <div className="project">
                                         <h4>FML Club</h4>
                                         <p>Development</p>
@@ -61,7 +61,7 @@ export default function Recent(){
                                 </Link>
                             </div>
                             <div className="show_projects">
-                                <Link href="#">More Work</Link>
+                                <Link href="https://www.behance.net/dennisj753" target="_blank">More Work</Link>
                             </div>
                         </Col>
                     </Row>
