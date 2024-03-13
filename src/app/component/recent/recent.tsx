@@ -61,7 +61,7 @@ export default function Recent(){
                                 </Link>
                             </div>
                             <div className="show_projects">
-                                <Link href="https://www.behance.net/dennisj753" target="_blank">More Work</Link>
+                                <Link href="https://www.behance.net/dennisj753" className="btn btn-primary" target="_blank">More Work</Link>
                             </div>
                         </Col>
                     </Row>
