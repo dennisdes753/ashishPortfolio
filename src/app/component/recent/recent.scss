@@ -81,3 +81,29 @@
         }
     }
 }    
+
+@media(min-width: 320px) and (max-width: 1240px){
+    .recent_sec .recent_projects .recent_fml .project h4 {
+        font-size: 54px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 991px){
+    .recent_sec .recent_projects .recent_fml .project h4 {
+        font-size: 34px;
+    }
+    .recent_sec .recent_projects .recent_fml {
+        padding: 0;
+    }
+    .recent_sec .recent_projects .recent_fml .fml_project {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .recent_sec .recent_projects .recent_fml:hover .fml_project {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,4 +1,4 @@
-
+'use client'
 import Header from './component/header/header'
 import Banner from './component/banner/banner'
 import About from './component/about/about'

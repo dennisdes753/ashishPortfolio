@@ -89,3 +89,40 @@ footer{
         }
     }
 }
+
+@media(min-width: 320px) and (max-width: 1240px){
+    footer .footer_inner h4 {
+        font-size: 70px;
+    }
+    footer .get_in_touch button {
+        width: 190px;
+        height: 190px;
+    }
+    footer .mailid_phone {
+        top: -30px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 991px) {
+    footer .mailid_phone {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    footer .footer_inner h4 {
+        font-size: 40px;
+    }
+    footer .get_in_touch {
+        top: 0;
+    }
+    footer .mailid_phone {
+        top: 0;
+        flex-direction: column;
+    }
+    footer .mailid_phone a {
+        padding: 30px 75px;
+        font-size: 18px;
+    }
+    .recent_sec .recent_projects .recent_fml .project {
+        flex-direction: column;
+    }
+}

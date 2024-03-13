@@ -52,3 +52,20 @@
 .hovered {
     transform: translate(500px, 500px);
 }
+
+@media(min-width: 320px) and (max-width: 1240px){
+    .about_sec .about_right {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media(min-width: 320px) and (max-width: 991px){
+    .about_sec .about_button {
+        padding-left: 0;
+        margin: 40px auto 0;
+        text-align: center;
+    }
+    .about_sec .about_right button {
+        min-width: 47%;
+    }
+}

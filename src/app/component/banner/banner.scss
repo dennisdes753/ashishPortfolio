@@ -188,3 +188,39 @@
         }
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1560px) {
+    .bannerSection img {
+        bottom: -100px;
+    }
+}
+
+@media(min-width: 860px) and (max-width:1240px){
+    .bannerSection .freelance_content {
+        left: 76%;
+        top: 15%;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 991px){
+    .bannerSection img {
+        bottom: -50px;
+        left: 0;
+    }
+    .bannerSection .location_india {
+        top: 75%;
+        left: -58px;
+    }
+    .bannerSection .freelance_content {
+        display: none;
+    }
+    .bannerSection .ashish_marque {
+        bottom: 170px;
+    }
+    .bannerSection .ashish_marque p {
+        font-size: 130px;
+    }
+    button.navbar-toggler.collapsed {
+        display: none;
+    }
+}
