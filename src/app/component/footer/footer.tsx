@@ -71,7 +71,7 @@ export default function Footer() {
                         </div>
                         <div className="mailid_phone">
                             <Link href="mailto:jainashish753@gmail.com" target="_blank" className="btn btn-primary">jainashish753@gmail.com</Link>
-                            <Link href="tel:91+8146133701" className="btn btn-primary">91+ 8146133701</Link>
+                            <Link href="tel:91+8146133701" className="btn btn-primary">+91 8146133701</Link>
                         </div>
                         <div className="footer_bottom">
                             <h4>

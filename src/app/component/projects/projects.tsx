@@ -5,15 +5,6 @@ import { FMLProject, FractionProject, HealthCareProject, MetaGameProject, Rudrak
 import './projects.scss'
 
 export default function Projects(){
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        rtl: true
-    };
     return(
         <>
             <div className="project_sec">

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, MouseEventHandler } from 'react';
-import {Container, Row, Col, Button} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import './about.scss'
 
 export default function About(){
@@ -59,7 +59,7 @@ export default function About(){
                                     for design, code & interaction
                                     position me in a unique place in
                                     the web design world.</p>
-                                <p className="font-bold">My SKills are:</p>
+                                <p className="font-bold my-3">My SKills are:</p>
                                 <button className="btn btn-primary">HTML</button>
                                 <button className="btn btn-primary">CSS</button>
                                 <button className="btn btn-primary">Sass</button>

@@ -4,7 +4,7 @@ import {Row, Col, Container} from 'react-bootstrap'
 import { AshishImg } from '../../asset/image/img'
 import './banner.scss'
 
-export default function Banner(){
+export default function Banner(){    
     return(
         <>
             <div className="bannerSection">

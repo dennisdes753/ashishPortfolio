@@ -9,16 +9,18 @@ import Footer from './component/footer/footer'
 export default function Home() {
 	return (
 		<>
-			<section className="main_header">
-				<Header />
-				<Banner/>
+			<section>
+				<div className="main_header">	
+					<Header/>
+					<Banner/>
+				</div>	
+				<div className="after_header">
+					<About/>
+					<Recent/>
+					<Project/>
+					<Footer/>
+				</div>
 			</section>	
-			<section className="after_header">
-				<About/>
-				<Recent/>
-				<Project/>
-				<Footer/>
-			</section>
 		</>	
 	);
 }
