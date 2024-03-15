@@ -8,7 +8,7 @@ import './recent.scss'
 export default function Recent(){
     return(
         <>
-            <div className="recent_sec">
+            <div className="recent_sec" data-scroll-section>
                 <Container>
                     <Row>
                         <Col xxl="12" md="12" xs="12">

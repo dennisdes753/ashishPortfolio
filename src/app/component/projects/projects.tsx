@@ -7,7 +7,7 @@ import './projects.scss'
 export default function Projects(){
     return(
         <>
-            <div className="project_sec">
+            <div className="project_sec" data-scroll-section>
                 <ul>
                     <li>
                         <Link href="https://www.fml.club/" target="_blank">

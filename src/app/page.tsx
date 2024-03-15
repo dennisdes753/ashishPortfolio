@@ -6,6 +6,7 @@ import About from './component/about/about'
 import Recent from './component/recent/recent'
 import Project from './component/projects/projects'
 import Footer from './component/footer/footer'
+import Lenis from '@studio-freight/lenis'
 
 export default function Home() {
 	const [preloader, setPreloader] = useState(true);
@@ -45,17 +46,21 @@ export default function Home() {
 				</div>
 			):(
 
-					<section>
+					<section id="main">
 						<div className="main_header">	
 							<Header/>
 							<Banner/>
 						</div>	
 						<div className="after_header">
 							<About/>
+						</div>
+						<div className="project_sticky">	
 							<Recent/>
 							<Project/>
-							<Footer/>
 						</div>
+						<div className="footer_sticky">
+							<Footer/>
+						</div>	
 					</section>
 				)
 			}	

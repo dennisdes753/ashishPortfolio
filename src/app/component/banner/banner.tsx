@@ -7,7 +7,7 @@ import './banner.scss'
 export default function Banner(){    
     return(
         <>
-            <div className="bannerSection">
+            <div className="bannerSection" data-scroll-section>
                 <Container>
                     <Row>
                         <Col xxl="12" md="12" xs="12">

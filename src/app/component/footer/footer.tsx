@@ -48,7 +48,7 @@ export default function Footer() {
     };
   return (
     <>
-        <footer>
+        <footer data-scroll-section>
             <Container>
                 <Row>
                     <Col xxl="12" md="12" xs="12">

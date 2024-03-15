@@ -8,6 +8,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -46,10 +47,45 @@ a{
 }
 
 /* Main Section Start Here */
+#main {
+    position: relative;
+}
 .main_header{
     width: 100%;
     min-height: 100vh;
     background: #999D9E;
+    position: sticky;
+    top: 0;
+}
+.after_header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.project_sticky{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.footer_sticky {
+    width: 100%;
+    z-index: 2;
+    top: 640px;
+    position: relative;
+}
+@media(min-width: 1640px) and (max-width: 1920px){
+    .footer_sticky {
+        top: 1000px;
+    }
+    .bannerSection img {
+        max-width: 540px !important;
+    }
 }
 
 .loader-wrapper{

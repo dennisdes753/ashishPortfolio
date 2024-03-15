@@ -45,7 +45,7 @@ export default function About(){
     };
     return(
         <>
-            <div className="about_sec">
+            <div className="about_sec" data-scroll-section>
                 <Container>
                     <Row>
                         <Col xxl="6"  lg="12" xs="12">
