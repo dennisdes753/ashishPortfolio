@@ -17,7 +17,7 @@ export default function Header() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Link className="resume_button btn btn-primary" href="https://drive.google.com/file/d/11grhO4I5u54srNJ8BVoxrG2Rh2Kkg0X0/view?usp=sharing" target="_blank">Resume</Link>
+                            <Link className="resume_button btn btn-primary" href="https://drive.google.com/file/d/1Lqr1zKMUlva7-4HI1L_qmK7hkEIf3fQK/view?usp=sharing" target="_blank">Resume</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
